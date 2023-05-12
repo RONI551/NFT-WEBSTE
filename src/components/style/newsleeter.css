@@ -1,0 +1,27 @@
+.newsletter .newsletter__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7153d9;
+    padding: 51px 72px 47px;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width:1024px){
+    .newsletter .newsletter__body{
+        flex-wrap: wrap;
+    }
+
+    .newsletter .newsletter__body .body__form{
+        width: 100%;
+        padding-left: 0!important;
+        padding-top: 30px;
+       
+    }
+}
+
+.newsletter .newsletter__body .body__form{
+    width:60%;
+    padding-left:43px;
+}

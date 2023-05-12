@@ -1,0 +1,47 @@
+.image-box{
+    position: relative;
+    border-radius:20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.image-box:hover{
+    overflow: hidden;
+}
+.image-box img{
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(0,0,0) scale(1,1,1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transform: translate3d(0,0,0) scale(1,1);
+    width: 100%;
+}
+
+.image-box:hover img{
+    transform: translate3d(0,0,0) scale(1.1,1.1,1.1);
+    -webkit-transform: translate3d(0,0,0) scale(1.1,1.1);
+    overflow: hidden;
+   
+}
+.image-box:hover .image-box__title{
+    bottom: 50px;
+    opacity: 0;
+    visibility: visible;
+    
+}
+.image-box:hover .image-box__title{
+    position: absolute;
+   
+    left: 49px;
+    right: 46px;
+    padding: 26px 0px 26px 10px;
+    background-color: #7153d9;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-box .image-box__title h6{
+margin-bottom: 0;
+}

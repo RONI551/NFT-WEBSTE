@@ -1,0 +1,121 @@
+.road-map__content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 52px;
+}
+
+.road-map__content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: 0;
+    margin-left: 0;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    border-radius: 2px;
+    margin-top: 84px;
+}
+
+ .road-map__content .box-time{
+    border-radius: 20px;
+    padding: 67px 60px 40px;
+    background: #4526b1;
+    max-width: 469px;
+    position: relative;
+}
+
+.road-map__content .box-time::before{
+    content: "";
+    position: absolute;
+    width:25%;
+    height: 4px;
+    background: #fff;
+    top: 50%;
+}
+
+@media only screen and (max-width:767px){
+    .road-map__content .box-time::before{
+        display: none;
+    }
+}
+
+.road-map__content .box-time.left::before{
+    right: -116px;
+}
+
+@media only screen and (max-width:767px){
+    .road-map__content .box-time.left::before{
+       display: none;
+    }
+    
+}
+
+.road-map__content .box-time.left span{
+    right: -133px;
+}
+
+@media only screen and (max-width:767px){
+    .road-map__content .box-time.left span{
+        display: none;
+    }
+}
+
+.road-map__content .box-time.right::before{
+   left: -116px;
+}
+.road-map__content .box-time.right span{
+    left: -133px;
+}
+
+.road-map__content .box-time span{
+    width: 34px;
+    height: 34px;
+    min-height: 34px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 44%;
+}
+
+.road-map__content .box-time span i {
+    font-size:16px;
+    color: #fd562a;
+
+}
+
+@media only screen and (max-width:1024px){
+    .road-map__content.s1{
+        justify-content: flex-end;
+    }
+    .road-map__content.s1::before{
+        left: 8%;
+    }
+    .road-map__content.s1 .box-time{
+        margin-top: 0!important;
+        margin-bottom: 100px;
+    }
+    .road-map__content.s1 .box-time::before{
+        left: -100%!important;
+        right: auto;
+        width: 100%;
+
+    }
+    .road-map__content.s1 .box-time span{
+        right: auto!important;
+        left: -59Px!important;
+    }
+}
+
+@media only screen and (max-width:1024px)and (max-width:767px){
+.road-map__content.s1 .box-time:nth-last-child(1){
+    margin-bottom: 0;
+}
+} 
